@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#75A4EE62"
+
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/india_covid19_tracker"
+        android:textSize="20sp"
+
+
+        android:textAlignment="center"
+        android:textColor="#050000"/>
+    <com.github.mikephil.charting.charts.PieChart
+        android:id = "@+id/pieChart"
+        android:layout_width = "match_parent"
+        android:layout_height="165dp" />
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/message_to_user"
+
+        android:textAlignment="center"
+        android:textColor="#077CDA"
+        android:layout_height="60dp"
+        android:layout_width="match_parent" />
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+
+                android:textSize="15sp"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=""
+                android:id="@+id/confirmed_d"
+                android:textSize="15sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active"
+
+
+                android:textSize="15sp"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/active_d"
+
+
+                android:textSize="15sp"
+               />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recovered"
+
+                android:textSize="15sp"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/recovered_d"
+                android:layout_below="@+id/active_d"
+
+                android:textSize="15sp"
+               />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deaths"
+
+
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/deceased_d"
+
+
+                android:textSize="15sp"
+               />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+    <Button
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#077CB1"
+
+        android:text="country wise report"
+
+        />
+    <Button
+        android:id="@+id/refresh_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#077CB1"
+
+        android:text="refresh"
+
+        /></TableRow></TableLayout>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:background="#F11404"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#B4DCF5">
+            <TextView
+                android:text="@string/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#111010"
+                android:textSize="12sp"/>
+            <TextView
+                android:text="@string/confirm"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:textColor="#161309"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:text="@string/active"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#FA262E"/>
+            <TextView
+                android:text="@string/recovered"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+
+                android:layout_height="wrap_content"
+                android:textColor="#4E8D05"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/deaths"
+
+                android:textColor="#D26B6A67"
+                android:textSize="10sp" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+ <ExpandableListView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/statelist"/>
+
+
+
+</LinearLayout>

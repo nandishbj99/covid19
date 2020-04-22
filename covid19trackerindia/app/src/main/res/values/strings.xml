@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">covid19</string>
+    <string name="state">STATE</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="active">ACTIVE</string>
+    <string name="recovered">RECOVERED</string>
+    <string name="deaths">DEATHS</string>
+    <string name="covid_19_india">COVID-19 INDIA</string>
+    <string name="india_covid19_tracker">INDIA COVID19 TRACKER</string>
+    <string name="country_prompt">Choose a country</string>
+</resources>

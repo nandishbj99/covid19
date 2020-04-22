@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#E4F2FC">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="country_name"
+                android:id="@+id/country_name"
+                android:textColor="#AC8305"
+                android:gravity="center"
+                />
+
+
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:paddingLeft="2dp"
+        android:paddingBottom="2dp"
+        android:paddingRight="2dp"
+
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#C3D7E6"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_case"
+                android:text="confirmed:"
+                android:textColor="#141314"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_case_d"
+                android:textColor="#0876CE"
+                android:text="124"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recovered"
+                android:text="recovered:"
+                android:textColor="#0D0E0D"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recovered_d"
+                android:textColor="#06B30D"
+                android:text="124"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/death"
+                android:text="deaths:"
+                android:textColor="#0A0A0A"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/death_d"
+                android:textColor="#EB1303"
+                android:text="124"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
